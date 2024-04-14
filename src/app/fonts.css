@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Black.eot');
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+        url('./fonts/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('./fonts/Montserrat/Montserrat-Black.woff') format('woff'),
+        url('./fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Söhne';
+    src: url('./fonts/TestSohne/TestSöhne-Kräftig.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Söhne';
+    src: url('./fonts/TestSohne/TestSöhne-Buch.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Test Söhne';
+    src: url('./fonts/TestSohne/TestSöhne-Dreiviertelfett.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SfPro/SFProDisplay-Regular.eot');
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('./fonts/SfPro/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SfPro/SFProDisplay-Regular.woff2') format('woff2'),
+        url('./fonts/SfPro/SFProDisplay-Regular.woff') format('woff'),
+        url('./fonts/SfPro/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SfPro/SFProDisplay-Thin.eot');
+    src: local('SF Pro Display Thin'), local('SFProDisplay-Thin'),
+        url('./fonts/SfPro/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/SfPro/SFProDisplay-Thin.woff2') format('woff2'),
+        url('./fonts/SfPro/SFProDisplay-Thin.woff') format('woff'),
+        url('./fonts/SfPro/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}

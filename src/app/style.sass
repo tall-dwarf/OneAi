@@ -1,0 +1,298 @@
+@import url("./fonts.css")
+    
+$color-black: #080708
+$color-purple: #6600FF
+$color-green: #00CC99
+$color-lavender: #FCEFF9
+$color-white: #EEE5E9
+
+@mixin font($size, $weight)
+    font-size: $size
+    font-weight: $weight
+
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    outline: none
+
+
+ul,
+ol 
+    list-style-type: none
+
+
+img
+    max-width: 100%
+
+body
+    background: transparent linear-gradient(180deg, $color-purple 0%, $color-green 100%) 0% 0% no-repeat padding-box
+
+.container
+    max-width: 308px
+    margin: 0 auto
+
+
+.header
+    padding: 18px 0px
+    position: sticky
+    top: 0
+    width: 100%
+    z-index: 2
+    border-radius: 0px 0px 50px 50px
+    background-color: $color-lavender
+    &-inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+
+.site-name
+    font-family: "Montserrat", sans-serif
+    color: $color-black
+    @include font(35px, 600)
+    
+.btn
+    @include font(19px, 500)
+    cursor: pointer
+    font-family: 'Test Söhne', sans-serif
+    &-pref
+        @include font(30px, 700)
+        font-family: 'Test Söhne', sans-serif
+        text-decoration: none
+        color: $color-black
+        background-color: #fff
+        display: inline-flex
+        align-items: center
+        gap: 10px
+        padding: 7px 20px
+        background: $color-lavender 0% 0% no-repeat padding-box
+        box-shadow: 0px 0px 20px #08070880
+        border-radius: 20px
+        border: 0px
+        &__img
+            width: 25px
+
+
+    &-purple
+        padding: 5px 20px
+        border-radius: 20px
+        background: $color-lavender 0% 0% no-repeat padding-box
+        box-shadow: 0px 0px 10px #6600FF66
+        border: 2px solid $color-purple
+        color: $color-purple
+        
+    &-green
+        @include font(25px, 700)
+        color: #fff
+        border-radius: 30px
+        padding: 8px 43px
+        background-color: $color-green
+        border: 0px
+        width: 100%
+    &-white
+        @include font(27px, 400)
+        padding: 15px 36px
+        border-radius: 30px        
+        color: $color-black
+        background-color: $color-lavender
+        border: 0px
+
+    &-img
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        gap: 10px
+        padding: 17px 0px
+        background: transparent linear-gradient(135deg, #FFF7FC66 0%, #FFFFFF66 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box
+        box-shadow: inset 3px 3px 6px #EEE5E9
+        border-radius: 20px
+        backdrop-filter: blur(20px)
+        border: none
+        max-width: 143px
+        font-family: 'Test Söhne', sans-serif
+        & > span
+            display: block
+            padding: 0px 9px
+            color: #FCEFF9
+            @include font(15px, 500)
+            
+
+
+.login-form
+    display: flex
+    flex-direction: column
+    max-width: 251px
+    display: flex
+    align-items: center
+    & > .btn-green
+        margin-top: 40px
+
+.form
+    &-input
+        font-family: 'Test Söhne', sans-serif
+        max-width: 100%
+        padding: 11px 20px
+        background: $color-lavender 0% 0% no-repeat padding-box
+        box-shadow: 0px 0px 20px #08070880
+        border: 2px solid $color-black
+        font-size: 25px
+        border-radius: 30px
+        font-weight: 400
+        &::placeholder
+            font-family: 'Test Söhne', sans-serif
+            font-weight: 400
+        & + &
+            margin-top: 20px
+
+.footer
+    padding: 30px
+    background-color: $color-lavender
+    border-radius: 50px 50px 0px 0px
+    &__title
+        @include font(20px, 500)
+        color: $color-black
+        margin-bottom: 20px
+        font-family: 'SF Pro Display', sans-serif
+    &__text
+        @include font(20px, 100)
+        color: $color-black
+        font-family: 'SF Pro Display', sans-serif
+
+.card
+    width: 100%
+    padding: 14px 14px 19px
+    background: transparent linear-gradient(140deg, #FFF7FC66 0%, #FFFFFF66 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box
+    box-shadow: inset 3px 3px 6px #EEE5E9
+    border-radius: 30px
+    backdrop-filter: blur(20px)
+    font-family: 'Montserrat', sans-serif
+    &__img
+        margin-bottom: 11px
+        border-radius: 20px
+    &__title
+        @include font(35px, 900)
+        color: $color-lavender
+
+.upload
+    height: 100vh
+    padding-top: 54px
+    background: transparent linear-gradient(242deg, $color-green 0%, $color-purple 100%) 0% 0% no-repeat padding-box
+    z-index: 4
+    position: fixed
+    top: 0
+    width: 100%
+    &__menu
+        display: flex
+        justify-content: space-between
+        margin-top: 40px
+    &-inner > .btn-pref
+        margin-bottom: 50px
+
+.img-slide
+    position: relative
+    box-shadow: inset 3px 3px 6px $color-white
+    border: 3px solid $color-white
+    border-radius: 20px
+    overflow: hidden
+    &__second
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        transition: all 2s
+        animation: element-width 5s infinite normal ease-in-out
+        animation-fill-mode: forwards
+        animation-delay: -5s
+        will-change: width
+    &__first
+        width: 100%
+        height: 100%
+
+@keyframes element-width
+  0%     
+    width: 100%
+  50% 
+    width: 0%
+  100% 
+    width: 100%
+
+.result-upload
+    position: fixed
+    z-index: 2
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: transparent linear-gradient(242deg, $color-green 0%, $color-purple 100%) 0% 0% no-repeat padding-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__img
+        border-radius: 40px
+        margin-bottom: 35px
+    &__menu
+        display: flex
+        flex-direction: column
+        gap: 20px
+        width: 100%
+        align-items: center
+        & > .btn-green
+            max-width: 244px
+            padding: 14px 0px
+        & > .btn-white
+            max-width: 190px
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 3
+    backdrop-filter: blur(50px)
+    display: flex
+    align-items: center
+    justify-content: center
+    transform: translateX(-100%)
+    transition: all 0.2s
+    &--open
+        transform: translateX(-0%)
+    &-close
+        height: 36px
+        position: absolute
+        top: 22px
+        right: 60px
+        background-color: transparent
+        border: 0px
+        cursor: pointer
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 36px
+            height: 4px
+            background-color: #FC440F
+            transform: translate(-50%, -50%) rotate(135deg)
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 36px
+            height: 4px
+            background-color: #FC440F
+            transform: translate(-50%, -50%) rotate(-135deg)
+
+
+.cards
+    padding: 42px 0px 
+    &-list
+        display: flex
+        flex-direction: column
+        gap: 40px
